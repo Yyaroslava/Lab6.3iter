@@ -7,7 +7,7 @@
 using namespace std;
 
 template <typename T> // шаблон функції
-void Create(T* c, const int size, const int Low, const int High) {
+void Create(T* c, const int size, T Low, T High) {
     for (int i = 0; i < size; i++)
         c[i] = Low + rand() % (High - Low + 1);
 }
